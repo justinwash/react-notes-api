@@ -5,7 +5,7 @@ custom:
   # Set the table name here so we can use it while testing locally
   tableName: ${self:custom.stage}-notes
 
-service: notes-app-dev-api
+service: notes-app-api
 
 # Create an optimized package for our functions
 package:
