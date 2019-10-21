@@ -10,11 +10,12 @@ export async function main(event, context) {
       noteId: event.pathParameters.id
     },
     UpdateExpression:
-      'SET title = :title, content = :content, attachment = :attachment',
+      'SET title = :title, content = :content, attachment = :attachment, tags = :tags',
     ExpressionAttributeValues: {
       ':title': data.title != '' ? data.title : null,
       ':attachment': data.attachment || null,
-      ':content': data.content || null
+      ':content': data.content || null,
+      ':tags': data.tags || null
     },
     ReturnValues: 'ALL_NEW'
   };

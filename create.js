@@ -12,6 +12,7 @@ export async function main(event, context) {
       title: data.title,
       content: data.content,
       attachment: data.attachment,
+      tags: data.tags,
       createdAt: Date.now()
     }
   };
